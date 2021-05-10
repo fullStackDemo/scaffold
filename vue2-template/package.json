@@ -1,0 +1,105 @@
+{
+  "name": "demo",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "build": "bash ./rm.sh && webpack --mode production --color && yarn tar",
+    "start": "node server.js",
+    "tar": "bash ./tar.sh"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.6.0",
+    "bluebird": "^3.7.2",
+    "element-ui": "^2.12.0",
+    "es6-promise": "^4.2.8",
+    "fetch-polyfill2": "^0.0.3",
+    "isomorphic-fetch": "^2.2.1",
+    "json3": "^3.3.3",
+    "vue": "^2.6.10",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.6",
+    "vue-seamless-scroll": "^1.1.17",
+    "vuex": "^3.1.1",
+    "vuex-local-sync": "^0.0.8",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-syntax-jsx": "^7.2.0",
+    "@babel/plugin-syntax-object-rest-spread": "^7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/runtime": "^7.6.2",
+    "@gfx/zopfli": "^1.0.14",
+    "babel-helper-vue-jsx-merge-props": "^2.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-syntax-jsx": "^6.18.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-plugin-transform-vue-jsx": "^3.7.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "compression": "^1.7.4",
+    "compression-webpack-plugin": "^3.0.0",
+    "core-js": "3",
+    "css-loader": "^3.2.0",
+    "es6-promise": "^4.2.8",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "file-loader": "^4.2.0",
+    "glob-all": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-proxy-middleware": "^0.19.1",
+    "image-webpack-loader": "^5.0.0",
+    "less": "^3.9.0",
+    "less-loader": "^5.0.0",
+    "live-server": "^1.2.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "purgecss-webpack-plugin": "^1.6.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.1.0",
+    "vue-loader": "^15.7.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.40.2",
+    "webpack-build-notifier": "^1.1.1",
+    "webpack-bundle-analyzer": "^3.5.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-spritesmith": "^1.0.2",
+    "zlib": "^1.0.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-debugger": "off",
+      "no-unused-vars": "off",
+      "no-useless-escape": "off"
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
